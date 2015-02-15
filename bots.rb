@@ -124,7 +124,7 @@ class GenBot
     end
 
     # 80% chance to tweet every 2 hours
-    bot.scheduler.every '1m' do
+    bot.scheduler.every '30m' do
       if rand <= 0.8
         bot.tweet @model.make_statement
       end
